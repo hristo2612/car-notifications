@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Offer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let offer of offers">
+    <ion-card-header>
+      <ion-card-title><a [href]="offer.url">{{offer.title}}</a></ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img style="width: 100%; height: auto; border-radius: 10px;" [src]="offer.imgUrl"/>
+      <h2>{{offer.price}} BGN</h2>
+      <h3>Year: {{offer.year}}</h3>
+      Seller Info: {{offer.seller.name}}
+      <br/>
+      Description: {{offer.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
