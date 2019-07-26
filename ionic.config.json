@@ -1,5 +1,7 @@
 {
   "name": "get-a-car",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
